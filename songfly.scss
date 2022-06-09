@@ -1,0 +1,1009 @@
+// Hero section
+.section {
+
+    // .section__songfly
+    &__songfly {
+        padding: 170px 0;
+        background: url('./assets/img/songfly/hero__bg.jpg') center / cover no-repeat;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        @media (max-width: 992px) {
+            padding: 100px 0;
+        }
+
+        .songfly__img {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: -1;
+
+            @media (max-width: 1400px) {
+                max-width: 600px;
+                top: 100px;
+            }
+
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.songfly {
+
+    .songfly__img-mob {
+        display: none;
+
+        @media (max-width: 992px) {
+            display: block;
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    // .songfly__item
+    &__item {
+        max-width: 700px;
+        z-index: 1;
+
+        @media (max-width: 992px) {
+            max-width: 100%;
+            padding-top: 30px;
+        }
+    }
+
+    // .songfly__logo
+    &__logo {
+        img {
+            @media (max-width: 992px) {
+                max-width: 150px;
+            }
+        }
+    }
+
+    // .songfly__title
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        color: #FFFFFF;
+        margin-top: 58px;
+
+        span {
+            color: #FF1241;
+            display: block;
+        }
+
+        @media (max-width: 1400px) {
+            font-size: 42px;
+            margin-top: 25px;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+
+    // .songfly__text
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 34px;
+        color: #FFFFFF;
+        margin-top: 10px;
+
+        @media (max-width: 1400px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+    }
+}
+
+// How section
+.section {
+
+    // .section__how
+    &__how {
+        padding: 80px 0;
+
+        @media (max-width: 768px) {
+            padding: 50px 0;
+        }
+    }
+}
+
+.how {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    justify-content: center;
+
+    @media (max-width: 1400px) {
+        column-gap: 50px;
+    }
+
+    @media (max-width: 1200px) {
+        column-gap: 30px;
+    }
+
+    // .how__item
+    &__item {
+        flex: 0 1 295px;
+        margin-top: 100px;
+
+        @media (max-width: 1400px) {
+            margin-top: 50px;
+        }
+
+        @media (max-width: 1200px) {
+            flex: 0 1 30%;
+        }
+
+        @media (max-width: 992px) {
+            flex: 0 1 45%;
+        }
+
+        @media (max-width: 768px) {
+            flex: 0 1 100%;
+            margin-top: 30px;
+        }
+    }
+
+    // .how__img
+    &__img {
+        height: 75px;
+
+        .last {
+            margin-top: -20px;
+
+            @media (max-width: 992px) {
+                margin-top: -10px;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            height: 50px;
+
+            img {
+                max-width: 75px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            height: 45px;
+
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+
+    // .how__title
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: #000000;
+        margin-top: 35px;
+
+        @media (max-width: 1400px) {
+            margin-top: 25px;
+            font-size: 24px;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+    }
+
+    // .how__text
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+        margin-top: 30px;
+
+        @media (max-width: 1400px) {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 992px) {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+}
+
+// Slider section
+.section {
+
+    // .section__slider
+    &__slider {}
+}
+
+.songfly {
+
+    // .songfly__slider
+    &__slider {
+        position: relative;
+
+        // Arrows
+        .songfly {
+
+            // .songfly__arrows
+            &__arrows {}
+
+            // .songfly__arrow
+            &__arrow {
+                position: absolute;
+                background: transparent;
+                cursor: pointer;
+                border: none;
+
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+
+            // .songfly__arrow-prev
+            &__arrow-prev {
+                left: 5%;
+                top: 50%;
+                transform: translate(-5%, -50%);
+                z-index: 101111;
+            }
+
+            // .songfly__arrow-next
+            &__arrow-next {
+                right: 5%;
+                top: 50%;
+                transform: translate(-5%, -50%);
+                z-index: 101111;
+            }
+        }
+
+        // Titles
+        .slide {
+
+            // .slide__title
+            &__title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 65px;
+                color: #FFFFFF;
+
+                @media (max-width: 1400px) {
+                    font-size: 36px;
+                    line-height: 1.3;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 28px;
+                }
+            }
+
+            // .slide__text
+            &__text {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 34px;
+                margin-top: 35px;
+                color: #FFFFFF;
+
+                @media (max-width: 1400px) {
+                    font-size: 18px;
+                    line-height: 1.3;
+                    margin-top: 15px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .swiper-slide {
+            padding-top: 150px;
+            padding-bottom: 200px;
+            height: auto !important;
+
+            @media (max-width: 1400px) {
+                padding: 100px 0;
+            }
+
+            @media (max-width: 992px) {
+                padding: 100px 20px;
+            }
+
+            @media (max-width: 768px) {
+                padding: 50px 20px 75px 20px;
+            }
+
+            &.swiper-slide-1 {
+                background: url('./assets/img/songfly/slide__bg-1.jpg') center / cover no-repeat;
+
+                .slide {
+
+                    // .slide__item
+                    &__item {
+                        max-width: 760px;
+                        margin: 0 auto;
+
+                    }
+
+                    // .slide__title
+                    &__title {
+                        max-width: 650px;
+                        margin-left: 30px;
+
+                        @media (max-width: 768px) {
+                            margin-left: 0;
+                            max-width: 100%;
+                        }
+                    }
+
+                    // .slide__text
+                    &__text {
+                        max-width: 650px;
+                        margin-left: 30px;
+
+                        @media (max-width: 768px) {
+                            margin-left: 0;
+                            max-width: 100%;
+                        }
+                    }
+
+                    // .slide__logos
+                    &__logos {
+                        display: flex;
+                        gap: 50px;
+                        align-items: center;
+                        margin-top: 80px;
+                        padding-bottom: 80px;
+
+                        @media (max-width: 1400px) {
+                            gap: 25px;
+                            margin-top: 50px;
+
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+
+                        @media (max-width: 768px) {
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+            }
+
+            &.swiper-slide-2 {
+                background: url('./assets/img/songfly/slide__bg-2.jpg') center / cover no-repeat;
+
+                .slide {
+                    max-width: 1000px;
+                    margin: 0 auto;
+
+                    // .slide__item
+                    &__item {
+                        max-width: 600px;
+                    }
+
+                    // .slide__img
+                    &__img {
+                        position: absolute;
+                        right: 0;
+                        top: 15px;
+                        bottom: 0;
+                        max-width: 750px;
+                        width: 100%;
+                        height: auto;
+                        z-index: -1;
+
+                        @media (max-width: 1400px) {
+                            max-width: 500px;
+                        }
+
+                        @media (max-width: 768px) {
+                            max-width: 250px;
+                            right: 0;
+                            bottom: 0;
+                            top: unset;
+                        }
+                    }
+                }
+
+            }
+
+            &.swiper-slide-3 {
+                background: url('./assets/img/songfly/slide__bg-3.jpg') center / cover no-repeat;
+
+                .slide {
+                    max-width: 1100px;
+                    margin: 0 auto;
+                    display: flex;
+                    gap: 30px;
+                    align-items: center;
+
+                    @media (max-width: 1400px) {
+                        max-width: 1000px;
+                    }
+
+                    @media (max-width: 768px) {
+                        flex-wrap: wrap-reverse;
+                    }
+
+                    // .slide__item
+                    &__item {
+                        img {
+                            @media (max-width: 1400px) {
+                                max-width: 250px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &.swiper-slide-4 {
+                background: url('./assets/img/songfly/slide__bg-4.jpg') center / cover no-repeat;
+
+                .slide {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    display: flex;
+                    gap: 80px;
+                    align-items: center;
+
+                    @media (max-width: 1400px) {
+                        gap: 50px;
+                    }
+
+                    @media (max-width: 768px) {
+                        flex-wrap: wrap;
+                        gap: 30px;
+                    }
+
+                    // .slide__item
+                    &__item {
+                        img {
+                            @media (max-width: 1400px) {
+                                max-width: 250px;
+                            }
+
+                            @media (max-width: 768px) {
+                                max-width: 200px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &.swiper-slide-5 {
+                background: #0D0D0D;
+
+                .slide {
+                    max-width: 1000px;
+                    margin: 0 auto;
+
+                    @media (max-width: 1400px) {
+                        gap: 50px;
+                    }
+
+                    @media (max-width: 768px) {
+                        gap: 30px;
+                    }
+
+                    // .slide__item
+                    &__item {
+                        .slide__image {
+                            margin-top: -50px;
+
+                            img {
+                                max-width: 100%;
+                                width: 100%;
+                                height: auto;
+
+                                @media (max-width: 1400px) {
+                                    max-width: 800px;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+
+                                @media (max-width: 768px) {
+                                    margin-top: 100px;
+                                }
+                            }
+                        }
+                    }
+
+                    .buttons {
+                        margin-top: -100px;
+                        display: flex;
+                        gap: 8px;
+
+                        @media (max-width: 1400px) {
+                            justify-content: center;
+                        }
+
+                        @media (max-width: 992px) {
+                            flex-wrap: wrap;
+                            margin-top: -50px;
+                        }
+                    }
+
+                    .slide {
+
+                        // .slide__btn
+                        &__btn {
+                            padding: 13px 28px;
+                            display: flex;
+                            flex: 0 1 175px;
+                            align-items: center;
+                            justify-content: center;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 22px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            text-decoration: none;
+
+                            &:not(:first-child) {
+                                border: 1px solid #C8C8C8;
+                                border-radius: 7.22153px;
+                            }
+
+                            @media (max-width: 1400px) {
+                                padding: 10px 24px;
+                                flex: 0 1 150px;
+
+                                img {
+                                    max-width: 75px;
+                                }
+                            }
+
+                            @media (max-width: 992px) {
+                                flex: 0 1 100px;
+                            }
+
+                            @media (max-width: 768px) {
+                                flex: 0 1 100%;
+
+                                img {
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            &.swiper-slide-6 {
+                background: url('./assets/img/songfly/slide__bg-4.jpg') center / cover no-repeat;
+
+                .slide {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    display: flex;
+                    gap: 80px;
+                    align-items: center;
+
+                    @media (max-width: 1400px) {
+                        gap: 50px;
+                    }
+
+                    @media (max-width: 768px) {
+                        flex-wrap: wrap;
+                        gap: 30px;
+                    }
+
+                    // .slide__item
+                    &__item {
+                        img {
+                            @media (max-width: 1400px) {
+                                max-width: 250px;
+                            }
+
+                            @media (max-width: 768px) {
+                                max-width: 200px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        // Pagination
+        .swiper-pagination {
+            bottom: 15% !important;
+
+            @media (max-width: 1400px) {
+                bottom: 10% !important;
+            }
+
+            @media (max-width: 992px) {
+                bottom: 5% !important;
+            }
+
+            .swiper-pagination-bullet {
+                width: 72px;
+                background: white;
+                height: 2.5px;
+                border-radius: 30px;
+
+                @media (max-width: 768px) {
+                    width: 35px;
+                }
+
+                &.swiper-pagination-bullet-active {
+                    background: white;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 2.5px;
+                        width: 0;
+                        background: #FF1241;
+                        animation: 8s slideDots linear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideDots {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+// Section Pricing
+.section {
+
+    // .section__pricing
+    &__pricing {
+        padding: 100px 0;
+        background: url('./assets/img/songfly/pricing__bg.svg') top / cover no-repeat;
+        margin-bottom: 100px;
+
+        @media (min-width: 2000px) {
+            background-position: 0 -500px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 75px 0;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.pricing {
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
+    // .pricing__item
+    &__item {
+        margin-top: 50px;
+
+        @media (max-width: 992px) {
+            margin-top: 25px;
+        }
+
+        @media (max-width: 768px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    // .pricing__title
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: #000000;
+        margin-top: 90px;
+
+        @media (max-width: 992px) {
+            margin-top: 50px;
+            font-size: 22px;
+            line-height: 1.3;
+        }
+    }
+
+    // .pricing__text
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+        margin-top: 30px;
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 10px;
+        }
+    }
+
+    // .pricing__img
+    &__img {
+        margin-top: 150px;
+
+        @media (max-width: 768px) {
+            margin-top: 15px;
+        }
+
+        img {
+            @media (max-width: 480px) {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+
+    // .footer__new
+    &__new {
+        padding-top: 130px;
+
+        @media (max-width: 992px) {
+            padding-top: 75px;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 0;
+
+            @media (max-width: 992px) {
+                flex-wrap: wrap;
+            }
+
+            // .footer__logo
+            &__logo {
+                display: flex;
+
+                img {
+                    @media (max-width: 768px) {
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            // .footer__menu
+            &__menu {
+                display: flex;
+                align-items: center;
+                gap: 90px;
+                margin: 0;
+                padding: 0;
+
+                @media (max-width: 1400px) {
+                    gap: 50px;
+                    margin-top: 25px;
+                }
+
+                @media (max-width: 768px) {
+                    gap: 20px;
+                }
+
+                @media (max-width: 480px) {
+                    flex-wrap: wrap;
+                }
+            }
+
+            // .footer__menu-item
+            &__menu-item {
+                display: flex;
+
+                a {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    display: flex;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        opacity: .75;
+                        transition: .3s opacity;
+                    }
+                }
+            }
+
+            // .footer__copy
+            &__copy {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 75px;
+
+                @media (max-width: 1400px) {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        .discovered {
+            padding-bottom: 60px;
+            border-bottom: 0.7px solid #D8D8D8;
+            ;
+        }
+
+        .copy {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 25px;
+            align-items: center;
+
+            // .copy__menu
+            &__menu {
+                display: flex;
+                gap: 44px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                @media (max-width: 768px) {
+                    gap: 20px;
+                    flex-wrap: wrap;
+                }
+            }
+
+            // .copy__menu-item
+            &__menu-item {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 12px;
+                color: rgba(255, 255, 255, 0.502972);
+
+                a {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 12px;
+                    color: rgba(255, 255, 255, 0.502972);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: white;
+                        transition: .3s color;
+                    }
+                }
+            }
+
+            // .copy__social
+            &__social {
+                display: flex;
+                gap: 40px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                @media (max-width: 992px) {
+                    margin-top: 25px;
+                }
+            }
+
+            // .copy__social-item
+            &__social-item {
+                &:hover {
+                    svg {
+                        transform: scale(1.1);
+                        transition: .3s transform;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    // .footer__subtext
+    &__subtext {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 975px;
+        margin: 0 auto;
+        margin-top: 33px;
+
+        @media (max-width: 992px) {
+            margin-top: 15px;
+            max-width: 100%;
+            font-size: 20px;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    // .footer__img
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding-left: 30px;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        @media (max-width: 1400) {
+            padding-left: 0;
+        }
+    }
+}
